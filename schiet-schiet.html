@@ -219,6 +219,8 @@ Error message and password prompt
 
 <li>Vergessen screen zu starten vor wichtigem Job</li>
 
+<li>Vim erkennt den Zeichensatz nicht richtig (vor allem auf Windows)</li>
+
 <li>Was in Bash geschrieben. Läuft schlecht.</li>
 
 <li>Will letzes Feld in String haben, cut liefert Mist</li>
@@ -9479,7 +9481,7 @@ Error message and password prompt
 <div created="20200209234633005" modified="20200209234709696" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
 </div>
-<div created="20200209235658949" list="[[IE stellt Seiten aus dem Intranet im Kompatibilitätsmodus dar]] [[Kommandos in Vim sind zu kompliziert um sie mit . zu wiederholen]] [[Kontrollzeichen in Bash Ausgabe anzeigen anstatt sie zu interpretieren]] [[In Bash liest &quot;read&quot; keine leeren Felder ein]] [[Was in Bash geschrieben. Läuft schlecht.]] [[In Windows verschwinden Dateien beim Schreiben auf &quot;Program Files&quot;]] [[Auf der Bash Kommandozeile mit dem Cursor rumfahren]] [[Ssh nervt mit nervigen Bannern die auf den Nerv gehen]] [[Will letzes Feld in String haben, cut liefert Mist]] [[X11 Forwarding funktioniert nicht nach sudo su -]] [[Vergessen screen zu starten vor wichtigem Job]] [[sudo vim &lt;file&gt; lädt nicht die gewünschte .vimrc]] GettingStarted" modified="20200209235804027" title="$:/StoryList">
+<div created="20200209235658949" list="[[Vim erkennt den Zeichensatz nicht richtig (vor allem auf Windows)]] [[IE stellt Seiten aus dem Intranet im Kompatibilitätsmodus dar]] [[Kommandos in Vim sind zu kompliziert um sie mit . zu wiederholen]] [[Kontrollzeichen in Bash Ausgabe anzeigen anstatt sie zu interpretieren]] [[In Bash liest &quot;read&quot; keine leeren Felder ein]] [[Was in Bash geschrieben. Läuft schlecht.]] [[In Windows verschwinden Dateien beim Schreiben auf &quot;Program Files&quot;]] [[Auf der Bash Kommandozeile mit dem Cursor rumfahren]] [[Ssh nervt mit nervigen Bannern die auf den Nerv gehen]] [[Will letzes Feld in String haben, cut liefert Mist]] [[X11 Forwarding funktioniert nicht nach sudo su -]] [[Vergessen screen zu starten vor wichtigem Job]] [[sudo vim &lt;file&gt; lädt nicht die gewünschte .vimrc]] GettingStarted" modified="20200209235804027" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9782,6 +9784,20 @@ http://askubuntu.com/questions/22037/aliases-not-available-when-using-sudo</pre>
 </div>
 <div created="20200210000024472" modified="20200210000118170" tags="" title="Vergessen screen zu starten vor wichtigem Job">
 <pre>Benutze disown und reptyr: http://monkeypatch.me/blog/move-a-running-process-to-a-new-screen-shell.html</pre>
+</div>
+<div created="20200210003200635" modified="20200210003422394" tags="" title="Vim erkennt den Zeichensatz nicht richtig (vor allem auf Windows)">
+<pre>!! Zeichensatz der Anzeige auf utf-8 setzen
+
+```
+:set encoding=utf-8
+```
+
+!! Zeichensatz der ''zu scheibenden Datei'' auf utf-8 setzen
+
+```
+:set fileencoding=utf-8
+```
+</pre>
 </div>
 <div created="20200210002027214" modified="20200210002056993" tags="" title="Was in Bash geschrieben. Läuft schlecht.">
 <pre>http://mywiki.wooledge.org/BashPitfalls

@@ -225,6 +225,8 @@ Error message and password prompt
 
 <li>sudo vim &lt;file&gt; lädt nicht die gewünschte .vimrc</li>
 
+<li>System Stats auf Linux</li>
+
 <li>Vergessen screen zu starten vor wichtigem Job</li>
 
 <li>Vim erkennt den Zeichensatz nicht richtig (vor allem auf Windows)</li>
@@ -9491,7 +9493,7 @@ Error message and password prompt
 <div created="20200209234633005" modified="20200209234709696" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
 </div>
-<div created="20200209235658949" list="[[Gezogene GPOs angucken]] [[Git Repository nach GitLab kopieren / verschieben]] [[Keine Ahnung von crontab?]] [[Windows Explorer lässt einen keine .gitignore erstellen]] [[nmon sieht Mist aus, hat lauter p und x anstatt Linien]] [[Vim erkennt den Zeichensatz nicht richtig (vor allem auf Windows)]] [[IE stellt Seiten aus dem Intranet im Kompatibilitätsmodus dar]] [[Kommandos in Vim sind zu kompliziert um sie mit . zu wiederholen]] [[Kontrollzeichen in Bash Ausgabe anzeigen anstatt sie zu interpretieren]] [[In Bash liest &quot;read&quot; keine leeren Felder ein]] [[Was in Bash geschrieben. Läuft schlecht.]] [[In Windows verschwinden Dateien beim Schreiben auf &quot;Program Files&quot;]] [[Auf der Bash Kommandozeile mit dem Cursor rumfahren]] [[Ssh nervt mit nervigen Bannern die auf den Nerv gehen]] [[Will letzes Feld in String haben, cut liefert Mist]] [[X11 Forwarding funktioniert nicht nach sudo su -]] [[Vergessen screen zu starten vor wichtigem Job]] [[sudo vim &lt;file&gt; lädt nicht die gewünschte .vimrc]] GettingStarted" modified="20200210004156746" title="$:/StoryList">
+<div created="20200209235658949" list="[[System Stats auf Linux]] [[Gezogene GPOs angucken]] [[Git Repository nach GitLab kopieren / verschieben]] [[Keine Ahnung von crontab?]] [[Windows Explorer lässt einen keine .gitignore erstellen]] [[nmon sieht Mist aus, hat lauter p und x anstatt Linien]] [[Vim erkennt den Zeichensatz nicht richtig (vor allem auf Windows)]] [[IE stellt Seiten aus dem Intranet im Kompatibilitätsmodus dar]] [[Kommandos in Vim sind zu kompliziert um sie mit . zu wiederholen]] [[Kontrollzeichen in Bash Ausgabe anzeigen anstatt sie zu interpretieren]] [[In Bash liest &quot;read&quot; keine leeren Felder ein]] [[Was in Bash geschrieben. Läuft schlecht.]] [[In Windows verschwinden Dateien beim Schreiben auf &quot;Program Files&quot;]] [[Auf der Bash Kommandozeile mit dem Cursor rumfahren]] [[Ssh nervt mit nervigen Bannern die auf den Nerv gehen]] [[Will letzes Feld in String haben, cut liefert Mist]] [[X11 Forwarding funktioniert nicht nach sudo su -]] [[Vergessen screen zu starten vor wichtigem Job]] [[sudo vim &lt;file&gt; lädt nicht die gewünschte .vimrc]] GettingStarted" modified="20200210004156746" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9700,10 +9702,10 @@ Alt  + B     Move cursor backward one word on the current line
 ```
 </pre>
 </div>
-<div created="20200210004228676" modified="20200210004459492" tags="" title="Gezogene GPOs angucken">
+<div created="20200210004228676" modified="20200210004544636" tags="" title="Gezogene GPOs angucken">
 <pre>
 ```
-* gpresult /Scope User /v
+gpresult /Scope User /v
 ```
 ```
 gpresult /Scope Computer /v
@@ -9828,6 +9830,15 @@ alias sudo='sudo '
 
 
 http://askubuntu.com/questions/22037/aliases-not-available-when-using-sudo</pre>
+</div>
+<div created="20200210004745089" modified="20200210004846947" tags="" title="System Stats auf Linux">
+<pre>* iostat
+* iftop
+* dstat
+* nmon
+* htop
+* iotop
+* top (Op[Enter] für Swap)</pre>
 </div>
 <div created="20200210000024472" modified="20200210000118170" tags="" title="Vergessen screen zu starten vor wichtigem Job">
 <pre>Benutze disown und reptyr: http://monkeypatch.me/blog/move-a-running-process-to-a-new-screen-shell.html</pre>

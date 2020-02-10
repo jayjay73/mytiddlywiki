@@ -205,6 +205,8 @@ Error message and password prompt
 
 <li>Vergessen screen zu starten vor wichtigem Job</li>
 
+<li>X11 Forwarding funktioniert nicht nach sudo su -</li>
+
 </ul>
 </p>
 
@@ -9459,7 +9461,7 @@ Error message and password prompt
 <div created="20200209234633005" modified="20200209234709696" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
 </div>
-<div created="20200209235658949" list="[[Vergessen screen zu starten vor wichtigem Job]] [[sudo vim &lt;file&gt; lädt nicht die gewünschte .vimrc]] GettingStarted" modified="20200209235804027" title="$:/StoryList">
+<div created="20200209235658949" list="[[X11 Forwarding funktioniert nicht nach sudo su -]] [[Vergessen screen zu starten vor wichtigem Job]] [[sudo vim &lt;file&gt; lädt nicht die gewünschte .vimrc]] GettingStarted" modified="20200209235804027" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9665,6 +9667,20 @@ http://askubuntu.com/questions/22037/aliases-not-available-when-using-sudo</pre>
 </div>
 <div created="20200210000024472" modified="20200210000118170" tags="" title="Vergessen screen zu starten vor wichtigem Job">
 <pre>Benutze disown und reptyr: http://monkeypatch.me/blog/move-a-running-process-to-a-new-screen-shell.html</pre>
+</div>
+<div created="20200210000128384" modified="20200210000225928" tags="" title="X11 Forwarding funktioniert nicht nach sudo su -">
+<pre>Mit-Magic-Cookie von Hand kopieren:
+
+
+```
+$ xauth list $DISPLAY
+optiaapp02:10  MIT-MAGIC-COOKIE-1  675cd08cb80835458743f1afca4ebef4
+$ sudo su -
+# xauth add optiaapp02:10  MIT-MAGIC-COOKIE-1  675cd08cb80835458743f1afca4ebef4
+```
+
+
+oder xudo benutzen.</pre>
 </div>
 
 </div>

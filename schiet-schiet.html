@@ -239,6 +239,8 @@ Error message and password prompt
 
 <li>Vergessen screen zu starten vor wichtigem Job</li>
 
+<li>Vim Encoding</li>
+
 <li>Vim erkennt den Zeichensatz nicht richtig (vor allem auf Windows)</li>
 
 <li>Vim Folding</li>
@@ -9505,7 +9507,7 @@ Error message and password prompt
 <div created="20200209234633005" modified="20200209234709696" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
 </div>
-<div created="20200209235658949" list="[[Vim Folding]] [[Mit Regex String matchen aber den Teil danach ausgeben]] [[Regex Trouble?]] [[UNIX Timestamps]] [[Prozesse im Status 'D']] [[Proxy auf Linux Kommandozeile]] [[System Stats auf Linux]] [[Gezogene GPOs angucken]] [[Git Repository nach GitLab kopieren / verschieben]] [[Keine Ahnung von crontab?]] [[Windows Explorer lässt einen keine .gitignore erstellen]] [[nmon sieht Mist aus, hat lauter p und x anstatt Linien]] [[Vim erkennt den Zeichensatz nicht richtig (vor allem auf Windows)]] [[IE stellt Seiten aus dem Intranet im Kompatibilitätsmodus dar]] [[Kommandos in Vim sind zu kompliziert um sie mit . zu wiederholen]] [[Kontrollzeichen in Bash Ausgabe anzeigen anstatt sie zu interpretieren]] [[In Bash liest &quot;read&quot; keine leeren Felder ein]] [[Was in Bash geschrieben. Läuft schlecht.]] [[In Windows verschwinden Dateien beim Schreiben auf &quot;Program Files&quot;]] [[Auf der Bash Kommandozeile mit dem Cursor rumfahren]] [[Ssh nervt mit nervigen Bannern die auf den Nerv gehen]] [[Will letzes Feld in String haben, cut liefert Mist]] [[X11 Forwarding funktioniert nicht nach sudo su -]] [[Vergessen screen zu starten vor wichtigem Job]] [[sudo vim &lt;file&gt; lädt nicht die gewünschte .vimrc]] GettingStarted" modified="20200210004156746" title="$:/StoryList">
+<div created="20200209235658949" list="[[Vim Encoding]] [[Vim Folding]] [[Mit Regex String matchen aber den Teil danach ausgeben]] [[Regex Trouble?]] [[UNIX Timestamps]] [[Prozesse im Status 'D']] [[Proxy auf Linux Kommandozeile]] [[System Stats auf Linux]] [[Gezogene GPOs angucken]] [[Git Repository nach GitLab kopieren / verschieben]] [[Keine Ahnung von crontab?]] [[Windows Explorer lässt einen keine .gitignore erstellen]] [[nmon sieht Mist aus, hat lauter p und x anstatt Linien]] [[Vim erkennt den Zeichensatz nicht richtig (vor allem auf Windows)]] [[IE stellt Seiten aus dem Intranet im Kompatibilitätsmodus dar]] [[Kommandos in Vim sind zu kompliziert um sie mit . zu wiederholen]] [[Kontrollzeichen in Bash Ausgabe anzeigen anstatt sie zu interpretieren]] [[In Bash liest &quot;read&quot; keine leeren Felder ein]] [[Was in Bash geschrieben. Läuft schlecht.]] [[In Windows verschwinden Dateien beim Schreiben auf &quot;Program Files&quot;]] [[Auf der Bash Kommandozeile mit dem Cursor rumfahren]] [[Ssh nervt mit nervigen Bannern die auf den Nerv gehen]] [[Will letzes Feld in String haben, cut liefert Mist]] [[X11 Forwarding funktioniert nicht nach sudo su -]] [[Vergessen screen zu starten vor wichtigem Job]] [[sudo vim &lt;file&gt; lädt nicht die gewünschte .vimrc]] GettingStarted" modified="20200210004156746" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9895,6 +9897,23 @@ https://www.epochconverter.com/</pre>
 </div>
 <div created="20200210000024472" modified="20200210000118170" tags="" title="Vergessen screen zu starten vor wichtigem Job">
 <pre>Benutze disown und reptyr: http://monkeypatch.me/blog/move-a-running-process-to-a-new-screen-shell.html</pre>
+</div>
+<div created="20200210010032090" modified="20200210010130707" tags="" title="Vim Encoding">
+<pre>
+```
+set enc=utf-8
+```
+
+vergiss es, encoding kann man nicht vernünftig über die Modeline setzen, bester Versuch hier: http://vim.wikia.com/wiki/How_to_make_fileencoding_work_in_the_modeline
+
+in HTML Dateien hilft:
+
+```
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+
+```
+
+Das sollte zwar bei HTML 5 Standardeinstellung sein, aber...</pre>
 </div>
 <div created="20200210003200635" modified="20200210003538007" tags="" title="Vim erkennt den Zeichensatz nicht richtig (vor allem auf Windows)">
 <pre>!! Zeichensatz der ''Anzeige'' auf utf-8 setzen

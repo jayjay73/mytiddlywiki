@@ -201,6 +201,8 @@ Error message and password prompt
 
 <li>Auf der Bash Kommandozeile mit dem Cursor rumfahren</li>
 
+<li>Git Repository nach GitLab kopieren / verschieben</li>
+
 <li>Hello World</li>
 
 <li>IE stellt Seiten aus dem Intranet im Kompatibilitätsmodus dar</li>
@@ -9487,7 +9489,7 @@ Error message and password prompt
 <div created="20200209234633005" modified="20200209234709696" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
 </div>
-<div created="20200209235658949" list="[[Keine Ahnung von crontab?]] [[Windows Explorer lässt einen keine .gitignore erstellen]] [[nmon sieht Mist aus, hat lauter p und x anstatt Linien]] [[Vim erkennt den Zeichensatz nicht richtig (vor allem auf Windows)]] [[IE stellt Seiten aus dem Intranet im Kompatibilitätsmodus dar]] [[Kommandos in Vim sind zu kompliziert um sie mit . zu wiederholen]] [[Kontrollzeichen in Bash Ausgabe anzeigen anstatt sie zu interpretieren]] [[In Bash liest &quot;read&quot; keine leeren Felder ein]] [[Was in Bash geschrieben. Läuft schlecht.]] [[In Windows verschwinden Dateien beim Schreiben auf &quot;Program Files&quot;]] [[Auf der Bash Kommandozeile mit dem Cursor rumfahren]] [[Ssh nervt mit nervigen Bannern die auf den Nerv gehen]] [[Will letzes Feld in String haben, cut liefert Mist]] [[X11 Forwarding funktioniert nicht nach sudo su -]] [[Vergessen screen zu starten vor wichtigem Job]] [[sudo vim &lt;file&gt; lädt nicht die gewünschte .vimrc]] GettingStarted" modified="20200209235804027" title="$:/StoryList">
+<div created="20200209235658949" list="[[Git Repository nach GitLab kopieren / verschieben]] [[Keine Ahnung von crontab?]] [[Windows Explorer lässt einen keine .gitignore erstellen]] [[nmon sieht Mist aus, hat lauter p und x anstatt Linien]] [[Vim erkennt den Zeichensatz nicht richtig (vor allem auf Windows)]] [[IE stellt Seiten aus dem Intranet im Kompatibilitätsmodus dar]] [[Kommandos in Vim sind zu kompliziert um sie mit . zu wiederholen]] [[Kontrollzeichen in Bash Ausgabe anzeigen anstatt sie zu interpretieren]] [[In Bash liest &quot;read&quot; keine leeren Felder ein]] [[Was in Bash geschrieben. Läuft schlecht.]] [[In Windows verschwinden Dateien beim Schreiben auf &quot;Program Files&quot;]] [[Auf der Bash Kommandozeile mit dem Cursor rumfahren]] [[Ssh nervt mit nervigen Bannern die auf den Nerv gehen]] [[Will letzes Feld in String haben, cut liefert Mist]] [[X11 Forwarding funktioniert nicht nach sudo su -]] [[Vergessen screen zu starten vor wichtigem Job]] [[sudo vim &lt;file&gt; lädt nicht die gewünschte .vimrc]] GettingStarted" modified="20200209235804027" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9695,6 +9697,24 @@ Alt  + F     Move cursor forward one word on the current line
 Alt  + B     Move cursor backward one word on the current line
 ```
 </pre>
+</div>
+<div created="20200210003958009" modified="20200210004139121" tags="" title="Git Repository nach GitLab kopieren / verschieben">
+<pre># In GitLab neues Projekt erstellen
+# Projekt URL kopieren
+# In TortoiseGit Settings öffnen
+# &quot;Remote&quot; und &quot;origin&quot; anklicken und URL ändern
+# Im TortoiseGit Hauptmenü &quot;Push&quot; auswählen
+# &quot;Push all branches&quot; und &quot;Include Tags&quot; auswählen. -&gt; OK
+# In TortoiseGit &quot;Git sync...&quot; auswählen und pushen
+
+oder
+
+# In GitLab neues Projekt erstellen
+# Projekt URL kopieren
+# vim .git/config -&gt; URL ändern
+# git push
+
+Wenn man Tags und Branches hat [[das hier|http://stackoverflow.com/questions/20359936/import-an-existing-git-project-into-gitlab]] beachten!</pre>
 </div>
 <div created="20200209230637708" modified="20200209230740580" tags="" title="Hello World">
 <pre></pre>

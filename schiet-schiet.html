@@ -475,9 +475,7 @@ Error message and password prompt
 
 <li>Vergessen screen zu starten vor wichtigem Job</li>
 
-<li>Vim Encoding</li>
-
-<li>Vim erkennt den Zeichensatz nicht richtig (vor allem auf Windows)</li>
+<li>Vim Encoding und Zeichensatz</li>
 
 <li>Vim Folding</li>
 
@@ -9861,7 +9859,7 @@ Error message and password prompt
 <div created="20200210010815076" creator="J" modified="20200210010825862" modifier="Jayay" title="$:/status/UserName">
 <pre>JayJay</pre>
 </div>
-<div created="20200215175238673" creator="JayJay" list="$:/AdvancedSearch" modified="20200215175604811" modifier="JayJay" title="$:/StoryList">
+<div created="20200215175238673" creator="JayJay" list="[[Vim Encoding und Zeichensatz]] $:/AdvancedSearch" modified="20200215182158259" modifier="JayJay" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200210010625060" creator="JayJay" modified="20200215170158818" modifier="JayJay" title="$:/temp/advancedsearch">
@@ -11042,9 +11040,17 @@ https://www.epochconverter.com/</pre>
 <div created="20200210000024472" modified="20200210000118170" tags="" title="Vergessen screen zu starten vor wichtigem Job">
 <pre>Benutze disown und reptyr: http://monkeypatch.me/blog/move-a-running-process-to-a-new-screen-shell.html</pre>
 </div>
-<div created="20200210010032090" modified="20200210010313051" tags="" title="Vim Encoding">
-<pre>```
-set enc=utf-8
+<div created="20200210010032090" creator="JayJay" modified="20200215182854820" modifier="JayJay" tags="" title="Vim Encoding und Zeichensatz">
+<pre>!! Zeichensatz der ''Anzeige'' auf utf-8 setzen
+
+```
+:set encoding=utf-8
+```
+
+!! Zeichensatz der ''zu scheibenden Datei'' auf utf-8 setzen
+
+```
+:set fileencoding=utf-8
 ```
 
 !! Modeline
@@ -11058,20 +11064,7 @@ Vergiss es, encoding kann man nicht vernünftig über die Modeline setzen, beste
 
 ```
 
-Das sollte zwar bei HTML 5 Standardeinstellung sein, aber...</pre>
-</div>
-<div created="20200210003200635" modified="20200210003538007" tags="" title="Vim erkennt den Zeichensatz nicht richtig (vor allem auf Windows)">
-<pre>!! Zeichensatz der ''Anzeige'' auf utf-8 setzen
-
-```
-:set encoding=utf-8
-```
-
-!! Zeichensatz der ''zu scheibenden Datei'' auf utf-8 setzen
-
-```
-:set fileencoding=utf-8
-```
+Das sollte zwar bei HTML 5 Standardeinstellung sein, aber...
 
 Andere schöne Zeichensätze sind: iso-8859-1, latin1</pre>
 </div>

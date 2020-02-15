@@ -151,6 +151,8 @@ Error message and password prompt
 
 <li>$:/config/RelinkOnRename</li>
 
+<li>$:/config/Toolbar/ButtonClass</li>
+
 <li>$:/core</li>
 
 <li>$:/GitHub/Filename</li>
@@ -201,9 +203,13 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla</li>
 
+<li>$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth</li>
+
 <li>$:/themes/tiddlywiki/vanilla/metrics/storyright</li>
 
 <li>$:/themes/tiddlywiki/vanilla/metrics/storywidth</li>
+
+<li>$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth</li>
 
 <li>$:/themes/tiddlywiki/vanilla/options/sidebarlayout</li>
 
@@ -293,6 +299,9 @@ Error message and password prompt
 </div>
 <div created="20200209232619193" modified="20200209232619194" title="$:/config/RelinkOnRename">
 <pre>yes</pre>
+</div>
+<div created="20200215142902344" creator="JayJay" modified="20200215143023267" modifier="JayJay" title="$:/config/Toolbar/ButtonClass">
+<pre>tc-btn-invisible</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.21">
 <pre>{
@@ -9520,8 +9529,8 @@ Error message and password prompt
 <div created="20200209234456243" modified="20200209234500799" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Basics</pre>
 </div>
-<div created="20200209230139511" modified="20200210010705682" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Info</pre>
+<div created="20200209230139511" creator="JayJay" modified="20200215143033487" modifier="JayJay" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Appearance</pre>
 </div>
 <div created="20200209230147815" modified="20200209231024817" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
@@ -9529,8 +9538,8 @@ Error message and password prompt
 <div created="20200210011054047" creator="JayJay" modified="20200210011137681" modifier="JayJay" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
-<div created="20200209231748139" creator="JayJay" modified="20200210011610345" modifier="JayJay" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Open</pre>
+<div created="20200209231748139" creator="JayJay" modified="20200215143147252" modifier="JayJay" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div created="20200209234633005" modified="20200209234709696" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
@@ -9538,7 +9547,7 @@ Error message and password prompt
 <div created="20200210010815076" creator="J" modified="20200210010825862" modifier="Jayay" title="$:/status/UserName">
 <pre>JayJay</pre>
 </div>
-<div created="20200209235658949" creator="JayJay" list="" modified="20200210011534694" modifier="JayJay" title="$:/StoryList">
+<div created="20200215142416272" creator="JayJay" list="[[interessante OpenSSL Kommandos]] GettingStarted $:/ControlPanel" modified="20200215143359444" modifier="JayJay" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200210010625060" modified="20200210010625060" title="$:/temp/advancedsearch">
@@ -9717,11 +9726,17 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20200209235032783" modified="20200209235111598" title="$:/themes/tiddlywiki/vanilla/metrics/storyright">
-<pre>770px</pre>
+<div created="20200215143134331" creator="JayJay" modified="20200215143335105" modifier="JayJay" title="$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth">
+<pre>350px</pre>
 </div>
-<div created="20200209235150797" modified="20200209235217109" title="$:/themes/tiddlywiki/vanilla/metrics/storywidth">
-<pre>770px</pre>
+<div created="20200209235032783" creator="JayJay" modified="20200215143444136" modifier="JayJay" title="$:/themes/tiddlywiki/vanilla/metrics/storyright">
+<pre>700px</pre>
+</div>
+<div created="20200209235150797" creator="JayJay" modified="20200215143447577" modifier="JayJay" title="$:/themes/tiddlywiki/vanilla/metrics/storywidth">
+<pre>700px</pre>
+</div>
+<div created="20200215143454337" creator="JayJay" modified="20200215143510657" modifier="JayJay" title="$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth">
+<pre>686px</pre>
 </div>
 <div created="20200209234733392" modified="20200209234733392" title="$:/themes/tiddlywiki/vanilla/options/sidebarlayout">
 <pre>fluid-fixed</pre>
@@ -9733,8 +9748,7 @@ Error message and password prompt
 <pre>classic</pre>
 </div>
 <div created="20200210001756049" modified="20200210001825023" tags="" title="Auf der Bash Kommandozeile mit dem Cursor rumfahren">
-<pre>
-```
+<pre>```
 Ctrl + A     Go to the beginning of the line you are currently typing on
 Ctrl + E     Go to the end of the line you are currently typing on
 Ctrl + L     Clears the Screen, similar to the clear command
@@ -9751,8 +9765,7 @@ Alt  + B     Move cursor backward one word on the current line
 </pre>
 </div>
 <div created="20200210004228676" modified="20200210004544636" tags="" title="Gezogene GPOs angucken">
-<pre>
-```
+<pre>```
 gpresult /Scope User /v
 ```
 ```
@@ -9864,8 +9877,7 @@ bei \K kann man auch Suchstrings variabler Länge z.B. Wildcard Pattern verwende
 <pre>In Putty unter Window -&gt; Translation die Option &quot;Allow ACS line drawing in UTF&quot; auswählen.</pre>
 </div>
 <div created="20200210004940141" modified="20200210005007131" tags="" title="Proxy auf Linux Kommandozeile">
-<pre>
-```
+<pre>```
 export HTTP_PROXY=&quot;&quot;
 export http_proxy=&quot;&quot;
 export HTTPS_PROXY=&quot;&quot;
@@ -9885,8 +9897,7 @@ https://regex101.com/
 </pre>
 </div>
 <div created="20200210010341925" modified="20200210010415240" tags="" title="SSH möchte unbedingt ein Passwort haben">
-<pre>
-```
+<pre>```
 -o ConnectTimeout=3 -o PasswordAuthentication=no -o ChallengeResponseAuthentication=no -o NumberOfPasswordPrompts=0 -o StrictHostKeyChecking=no
 ```
 </pre>
@@ -9943,8 +9954,7 @@ https://www.epochconverter.com/</pre>
 <pre>Benutze disown und reptyr: http://monkeypatch.me/blog/move-a-running-process-to-a-new-screen-shell.html</pre>
 </div>
 <div created="20200210010032090" modified="20200210010313051" tags="" title="Vim Encoding">
-<pre>
-```
+<pre>```
 set enc=utf-8
 ```
 
@@ -9977,8 +9987,7 @@ Das sollte zwar bei HTML 5 Standardeinstellung sein, aber...</pre>
 Andere schöne Zeichensätze sind: iso-8859-1, latin1</pre>
 </div>
 <div created="20200210005436167" modified="20200210005936887" tags="" title="Vim Folding">
-<pre>
-```
+<pre>```
 zc / zC      close this fold level / all fold levels
 zo / zO      open this fold level / all fold levels
 za / zA      toggle this fold level / all fold levels
@@ -9995,8 +10004,7 @@ zm / zM      increase fold level / all fold levels (&quot;fold more&quot;)
 https://google.github.io/styleguide/shell.xml</pre>
 </div>
 <div created="20200210000415005" modified="20200210000447116" tags="" title="Will letzes Feld in String haben, cut liefert Mist">
-<pre>
-```
+<pre>```
 awk '{print $NF}'
 ```
 </pre>

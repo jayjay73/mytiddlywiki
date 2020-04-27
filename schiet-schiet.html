@@ -483,6 +483,8 @@ Error message and password prompt
 
 <li>Vim Folding</li>
 
+<li>Vim regex for finding missing quotes in an assignment</li>
+
 <li>Was in Bash geschrieben. Läuft schlecht.</li>
 
 <li>Will letzes Feld in String haben, cut liefert Mist</li>
@@ -9863,7 +9865,7 @@ Error message and password prompt
 <div created="20200210010815076" creator="J" modified="20200210010825862" modifier="Jayay" title="$:/status/UserName">
 <pre>JayJay</pre>
 </div>
-<div list="[[Using STDERR in perl sub / function]] [[Safe SSL / TLS Cipher Parameters]] $:/AdvancedSearch" title="$:/StoryList">
+<div list="[[Vim regex for finding missing quotes in an assignment]] [[Using STDERR in perl sub / function]] [[Safe SSL / TLS Cipher Parameters]] $:/AdvancedSearch" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200210010625060" creator="JayJay" modified="20200319161114365" modifier="JayJay" title="$:/temp/advancedsearch">
@@ -11097,6 +11099,13 @@ zm / zM      increase fold level / all fold levels (&quot;fold more&quot;)
 
 
 Übrigens: &quot;z&quot; wurde nicht als Kommando gewählt, weil es von &quot;zusammenfalten&quot; kommt, sondern weil die Form des Buchstaben Z aussieht als würde etwas gefaltet.</pre>
+</div>
+<div created="20200427191057734" creator="JayJay" modified="20200427191650203" modifier="JayJay" tags="quoting" title="Vim regex for finding missing quotes in an assignment">
+<pre>
+```
+[^ =]=[^&quot;'=~]
+```
+</pre>
 </div>
 <div created="20200210002027214" modified="20200210002056993" tags="" title="Was in Bash geschrieben. Läuft schlecht.">
 <pre>http://mywiki.wooledge.org/BashPitfalls

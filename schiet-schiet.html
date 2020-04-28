@@ -10688,7 +10688,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div author="JeremyRuston" core-version="&gt;=5.0.0" created="20200215144915434" creator="JayJay" dependents="" description="Basic theme" modified="20200215144915434" modifier="JayJay" name="Vanilla" original-plugin-type="theme" original-tags="" original-title="$:/themes/tiddlywiki/vanilla" original-type="application/json" plugin-priority="0" server-url="https://tiddlywiki.com/library/v5.1.21/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.21/index.html/$:/themes/tiddlywiki/vanilla" type="text/vnd.tiddlywiki" version="5.1.21">
 <pre></pre>
 </div>
-<div created="20200209232135182" creator="JayJay" modified="20200319161114365" modifier="JayJay" title="$:/temp/search">
+<div created="20200209232135182" creator="JayJay" modified="20200428072808228" modifier="JayJay" title="$:/temp/search">
 <pre></pre>
 </div>
 <div created="20200215150108368" creator="JayJay" modified="20200215150108368" modifier="JayJay" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.21/index.html" url="https://tiddlywiki.com/library/v5.1.21/index.html">
@@ -11100,8 +11100,20 @@ zm / zM      increase fold level / all fold levels (&quot;fold more&quot;)
 
 Übrigens: &quot;z&quot; wurde nicht als Kommando gewählt, weil es von &quot;zusammenfalten&quot; kommt, sondern weil die Form des Buchstaben Z aussieht als würde etwas gefaltet.</pre>
 </div>
-<div created="20200427191057734" creator="JayJay" modified="20200427191650203" modifier="JayJay" tags="quoting" title="Vim regex for finding missing quotes in an assignment">
-<pre>
+<div created="20200427191057734" creator="JayJay" modified="20200428072826525" modifier="JayJay" title="Vim regex for finding missing quotes in an assignment">
+<pre>If you want to find out variable assignments in shell script that have quoting issues, i.e.
+
+
+```
+foo=bar
+```
+gets highlighted, whereas 
+
+```
+foo=&quot;baz&quot;
+```
+does not.
+
 ```
 [^ =]=[^&quot;'=~]
 ```

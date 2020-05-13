@@ -453,6 +453,8 @@ Error message and password prompt
 
 <li>Kontrollzeichen in Bash Ausgabe anzeigen anstatt sie zu interpretieren</li>
 
+<li>list and open port with firewalld</li>
+
 <li>Mit Regex String matchen aber den Teil danach ausgeben</li>
 
 <li>nmon sieht Mist aus, hat lauter p und x anstatt Linien</li>
@@ -9865,7 +9867,7 @@ Error message and password prompt
 <div created="20200210010815076" creator="J" modified="20200210010825862" modifier="Jayay" title="$:/status/UserName">
 <pre>JayJay</pre>
 </div>
-<div list="[[Vim regex for finding missing quotes in an assignment]] [[Using STDERR in perl sub / function]] [[Safe SSL / TLS Cipher Parameters]] $:/AdvancedSearch" title="$:/StoryList">
+<div list="[[list and open port with firewalld]] [[Vim regex for finding missing quotes in an assignment]] [[Using STDERR in perl sub / function]] [[Safe SSL / TLS Cipher Parameters]] $:/AdvancedSearch" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200210010625060" creator="JayJay" modified="20200319161114365" modifier="JayJay" title="$:/temp/advancedsearch">
@@ -10688,8 +10690,8 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div author="JeremyRuston" core-version="&gt;=5.0.0" created="20200215144915434" creator="JayJay" dependents="" description="Basic theme" modified="20200215144915434" modifier="JayJay" name="Vanilla" original-plugin-type="theme" original-tags="" original-title="$:/themes/tiddlywiki/vanilla" original-type="application/json" plugin-priority="0" server-url="https://tiddlywiki.com/library/v5.1.21/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.21/index.html/$:/themes/tiddlywiki/vanilla" type="text/vnd.tiddlywiki" version="5.1.21">
 <pre></pre>
 </div>
-<div created="20200209232135182" creator="JayJay" modified="20200428072808228" modifier="JayJay" title="$:/temp/search">
-<pre></pre>
+<div created="20200209232135182" creator="JayJay" modified="20200513155441023" modifier="JayJay" title="$:/temp/search">
+<pre>port</pre>
 </div>
 <div created="20200215150108368" creator="JayJay" modified="20200215150108368" modifier="JayJay" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.21/index.html" url="https://tiddlywiki.com/library/v5.1.21/index.html">
 <pre>loaded</pre>
@@ -10950,6 +10952,28 @@ mach hin
 cat -vet &lt;file&gt;
 ```
 </pre>
+</div>
+<div created="20200513155512882" creator="JayJay" modified="20200513160359037" modifier="JayJay" tags="" title="list and open port with firewalld">
+<pre>list rules
+
+```
+firewall-cmd --list-all
+```
+
+add ports or services
+
+```
+firewall-cmd --add-service=&lt;service name&gt;
+firewall-cmd --add-port &lt;port&gt;/tcp
+firewall-cmd --runtime-to-permanent
+```
+or
+
+```
+firewall-cmd --permanent --add-service=&lt;service name&gt;
+firewall-cmd --permanent --add-port=&lt;port&gt;/tcp
+firewall-cmd --reload
+```</pre>
 </div>
 <div created="20200210005255801" modified="20200210005429752" tags="" title="Mit Regex String matchen aber den Teil danach ausgeben">
 <pre>!! Lookbehind

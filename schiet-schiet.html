@@ -9883,7 +9883,7 @@ Error message and password prompt
 <div created="20200210010815076" creator="J" modified="20200210010825862" modifier="Jayay" title="$:/status/UserName">
 <pre>JayJay</pre>
 </div>
-<div list="[[in bash, check for substring in string]] [[perl here documents]] [[Windows etc hosts file]] [[Windows Win-R commands and shortcuts]] [[Bash EXIT signal trap]] [[Bash string manipulation]] [[bash split hostname / domain from FQDN]] [[list systemd services]] [[list and open port with firewalld]] [[Vim regex for finding missing quotes in an assignment]] [[Using STDERR in perl sub / function]] [[Safe SSL / TLS Cipher Parameters]] $:/AdvancedSearch" title="$:/StoryList">
+<div created="20200518232949164" creator="JayJay" list="[[Mit Regex String matchen aber den Teil danach ausgeben]] [[in bash, check for substring in string]] [[perl here documents]] [[Windows etc hosts file]] [[Windows Win-R commands and shortcuts]] [[Bash EXIT signal trap]] [[Bash string manipulation]] [[bash split hostname / domain from FQDN]] [[list systemd services]] [[list and open port with firewalld]] [[Vim regex for finding missing quotes in an assignment]] [[Using STDERR in perl sub / function]] [[Safe SSL / TLS Cipher Parameters]] $:/AdvancedSearch" modified="20200518232949164" modifier="JayJay" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200210010625060" creator="JayJay" modified="20200319161114365" modifier="JayJay" title="$:/temp/advancedsearch">
@@ -10706,8 +10706,8 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div author="JeremyRuston" core-version="&gt;=5.0.0" created="20200215144915434" creator="JayJay" dependents="" description="Basic theme" modified="20200215144915434" modifier="JayJay" name="Vanilla" original-plugin-type="theme" original-tags="" original-title="$:/themes/tiddlywiki/vanilla" original-type="application/json" plugin-priority="0" server-url="https://tiddlywiki.com/library/v5.1.21/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.21/index.html/$:/themes/tiddlywiki/vanilla" type="text/vnd.tiddlywiki" version="5.1.21">
 <pre></pre>
 </div>
-<div created="20200209232135182" creator="JayJay" modified="20200518172340571" modifier="JayJay" title="$:/temp/search">
-<pre>string</pre>
+<div created="20200209232135182" creator="JayJay" modified="20200518232944945" modifier="JayJay" title="$:/temp/search">
+<pre>grep \K</pre>
 </div>
 <div created="20200215150108368" creator="JayJay" modified="20200215150108368" modifier="JayJay" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.21/index.html" url="https://tiddlywiki.com/library/v5.1.21/index.html">
 <pre>loaded</pre>
@@ -11053,7 +11053,7 @@ systemctl list-unit-files | grep enabled
 systemctl list-unit-files | grep running
 ```</pre>
 </div>
-<div created="20200210005255801" modified="20200210005429752" tags="" title="Mit Regex String matchen aber den Teil danach ausgeben">
+<div created="20200210005255801" creator="JayJay" modified="20200518233020887" modifier="JayJay" tags="" title="Mit Regex String matchen aber den Teil danach ausgeben">
 <pre>!! Lookbehind
 
 ```
@@ -11066,7 +11066,9 @@ grep -oP '(?&lt;=string)[^&lt;]+'
 grep -oP 'string.*\K[^&lt;]+'
 ```
 
-bei \K kann man auch Suchstrings variabler Länge z.B. Wildcard Pattern verwenden, was bei Lookbehind nicht geht.</pre>
+bei \K kann man auch Suchstrings variabler Länge z.B. Wildcard Pattern verwenden, was bei Lookbehind nicht geht.
+
+https://stackoverflow.com/questions/13542950/support-of-k-in-regex</pre>
 </div>
 <div created="20200210003456361" modified="20200210003617963" tags="" title="nmon sieht Mist aus, hat lauter p und x anstatt Linien">
 <pre>In Putty unter Window -&gt; Translation die Option &quot;Allow ACS line drawing in UTF&quot; auswählen.</pre>

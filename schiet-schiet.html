@@ -10870,7 +10870,7 @@ Alt  + B     Move cursor backward one word on the current line
 ```
 </pre>
 </div>
-<div created="20200518172824790" creator="JayJay" modified="20200518173624127" modifier="JayJay" tags="" title="Bash EXIT signal trap">
+<div created="20200518172824790" creator="JayJay" modified="20200518173959748" modifier="JayJay" tags="" title="Bash EXIT signal trap">
 <pre>```
 function cleanup() {
     [[ -f &quot;${somefile}&quot; ]] &amp;&amp; rm &quot;${somefile}&quot;
@@ -10880,7 +10880,9 @@ function cleanup() {
 trap cleanup EXIT
 ```
 
-Do NOT use rm -r with ''just a variable'' for a file name. You are in for a surprise if it's empty!</pre>
+Do NOT use rm -r with ''just a variable'' for a file name. You are in for a surprise if it's empty!
+
+Somewhat fancier: https://www.linuxjournal.com/content/use-bash-trap-statement-cleanup-temporary-files</pre>
 </div>
 <div created="20200518161818565" creator="JayJay" modified="20200518171645268" modifier="JayJay" tags="PCRE" title="bash split hostname / domain from FQDN">
 <pre>Perl compatible regex for splitting off hostname and domain from FQDN. Remember that grep has no non-greedy (*?, +?) match, so add ^ in front.

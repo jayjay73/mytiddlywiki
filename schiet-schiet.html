@@ -10866,7 +10866,7 @@ Alt  + B     Move cursor backward one word on the current line
 ```
 </pre>
 </div>
-<div created="20200518161818565" creator="JayJay" modified="20200518170747051" modifier="JayJay" tags="PCRE" title="bash split hostname / domain from FQDN">
+<div created="20200518161818565" creator="JayJay" modified="20200518171645268" modifier="JayJay" tags="PCRE" title="bash split hostname / domain from FQDN">
 <pre>Perl compatible regex for splitting off hostname and domain from FQDN. Remember that grep has no non-greedy (*?, +?) match, so add ^ in front.
 
 hostname
@@ -10885,7 +10885,11 @@ hostname | awk -F'.' -vOFS='.' '{$1=&quot;&quot;; print substr($0,2)}'
 hostname | cut -d'.' -f2-
 ```
 
-mehr Schweinkram hier: https://www.unix.com/shell-programming-and-scripting/244263-awk-split-domain-name.html
+mehr Schweinkram hier:
+
+https://www.unix.com/shell-programming-and-scripting/244263-awk-split-domain-name.html
+
+https://stackoverflow.com/questions/8984720/awk-joining-n-fields-with-delimiter
 </pre>
 </div>
 <div created="20200210004228676" modified="20200210004544636" tags="" title="Gezogene GPOs angucken">

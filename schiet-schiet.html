@@ -441,6 +441,8 @@ Error message and password prompt
 
 <li>Bash string manipulation</li>
 
+<li>bash variables: empty vs. unset</li>
+
 <li>Gezogene GPOs angucken</li>
 
 <li>Git Repository nach GitLab kopieren / verschieben</li>
@@ -9883,7 +9885,7 @@ Error message and password prompt
 <div created="20200210010815076" creator="J" modified="20200210010825862" modifier="Jayay" title="$:/status/UserName">
 <pre>JayJay</pre>
 </div>
-<div created="20200518232949164" creator="JayJay" list="[[Mit Regex String matchen aber den Teil danach ausgeben]] [[in bash, check for substring in string]] [[perl here documents]] [[Windows etc hosts file]] [[Windows Win-R commands and shortcuts]] [[Bash EXIT signal trap]] [[Bash string manipulation]] [[bash split hostname / domain from FQDN]] [[list systemd services]] [[list and open port with firewalld]] [[Vim regex for finding missing quotes in an assignment]] [[Using STDERR in perl sub / function]] [[Safe SSL / TLS Cipher Parameters]] $:/AdvancedSearch" modified="20200518232949164" modifier="JayJay" title="$:/StoryList">
+<div created="20200518232949164" creator="JayJay" list="[[bash variables: empty vs. unset]] [[Mit Regex String matchen aber den Teil danach ausgeben]] [[in bash, check for substring in string]] [[perl here documents]] [[Windows etc hosts file]] [[Windows Win-R commands and shortcuts]] [[Bash EXIT signal trap]] [[Bash string manipulation]] [[bash split hostname / domain from FQDN]] [[list systemd services]] [[list and open port with firewalld]] [[Vim regex for finding missing quotes in an assignment]] [[Using STDERR in perl sub / function]] [[Safe SSL / TLS Cipher Parameters]] $:/AdvancedSearch" modified="20200518232949164" modifier="JayJay" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200210010625060" creator="JayJay" modified="20200319161114365" modifier="JayJay" title="$:/temp/advancedsearch">
@@ -10920,6 +10922,30 @@ https://stackoverflow.com/questions/8984720/awk-joining-n-fields-with-delimiter
 </div>
 <div created="20200518172303406" creator="JayJay" modified="20200518172322994" modifier="JayJay" tags="" title="Bash string manipulation">
 <pre>http://landoflinux.com/linux_bash_scripting_substring_tests.html
+</pre>
+</div>
+<div created="20200519000136233" creator="JayJay" modified="20200519001742736" modifier="JayJay" tags="" title="bash variables: empty vs. unset">
+<pre>The lowdown:
+
+```
+jaegerj@ansible:~[0]$ var=&quot;&quot;
+jaegerj@ansible:~[0]$ echo $var
+
+jaegerj@ansible:~[0]$ set -u
+jaegerj@ansible:~[0]$ echo $var
+
+jaegerj@ansible:~[0]$ unset var
+jaegerj@ansible:~[0]$ echo $var
+bash: var: unbound variable
+jaegerj@ansible:~[1]$ set +u
+jaegerj@ansible:~[0]$ echo $var
+
+jaegerj@ansible:~[0]$
+```
+
+${foo:bar} expands to &quot;bar&quot; when foo is unset, but &quot;&quot; when foo is null, while ${foo:-bar} expands to &quot;bar&quot; if foo is unset or null.
+
+https://stackoverflow.com/questions/12262696/using-unset-vs-setting-a-variable-to-empty
 </pre>
 </div>
 <div created="20200210004228676" modified="20200210004544636" tags="" title="Gezogene GPOs angucken">
